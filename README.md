@@ -44,7 +44,7 @@ Follow these steps to set up and run the project on your local machine.
 
 1.  **Clone the repository:**
     ```bash
-    git clone [Your Git Repository URL]
+    git clone https://github.com/janardhan1994/pearlcard-project.git
     cd pearlcard-project
     ```
 
