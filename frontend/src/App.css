@@ -1,0 +1,128 @@
+/* frontend/src/App.css */
+
+/* --- Base and General Styles --- */
+body { 
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; 
+    background-color: #f4f7f6; 
+  }
+  
+  .App { 
+    max-width: 700px; 
+    margin: 2rem auto; 
+    padding: 2rem; 
+    background-color: #fff; 
+    border-radius: 8px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+  }
+  
+  .App-header { 
+    text-align: center; 
+    border-bottom: 1px solid #dee2e6; 
+    margin-bottom: 2rem; 
+    padding-bottom: 1rem; 
+  }
+  
+  .App-header h1 { color: #343a40; }
+  
+  /* --- Form Styles --- */
+  .journey-form { 
+    margin-bottom: 2rem; 
+    padding: 1.5rem; 
+    border: 1px solid #e9ecef; 
+    border-radius: 6px; 
+  }
+  
+  .form-group { margin-bottom: 1rem; }
+  .form-group label { margin-right: 1rem; font-weight: 500; }
+  select { padding: 0.5rem; border-radius: 4px; border: 1px solid #ced4da; }
+  
+  /* --- Button Styles --- */
+  button { 
+    padding: 0.6rem 1.2rem; 
+    font-size: 1rem; 
+    cursor: pointer; 
+    border-radius: 4px; 
+    border: none; 
+    color: white; 
+    background-color: #007bff; 
+    transition: background-color 0.2s; 
+  }
+  button:hover { background-color: #0056b3; }
+  button:disabled { background-color: #ced4da; cursor: not-allowed; }
+  .reset-button { background-color: #6c757d; }
+  .reset-button:hover { background-color: #5a6268; }
+  .error { color: #dc3545; font-weight: 500; }
+  
+  /* --- Journeys List Layout and Styles --- */
+  .journeys-list { margin-bottom: 2rem; }
+  .journeys-list ul { list-style: none; padding: 0; margin: 0; }
+  
+  /* The main grid layout for list items, headers, and the total row. */
+  .journey-item {
+    display: grid;
+    /* Defines three columns: 1. Flexible space, 2. Fixed 80px, 3. Fixed 50px */
+    grid-template-columns: 1fr 80px 50px; 
+    align-items: center;
+    gap: 1rem;
+    padding: 0.75rem; 
+    background-color: #f8f9fa;
+    margin-bottom: 0.5rem;
+    border-radius: 4px;
+    border: 1px solid #e9ecef;
+  }
+  
+  /* Styling for the individual fare amount */
+  .fare-display {
+    font-weight: bold;
+    color: #28a745;
+    background-color: #eaf6ec;
+    padding: 0.2rem 0.6rem;
+    border-radius: 4px;
+    justify-self: center; /* Centers this item within its grid column */
+    text-align: center;
+    width: 100%;
+  }
+  
+  /* Styling for the delete '×' button */
+  .delete-journey-button {
+    background-color: transparent;
+    color: #dc3545;
+    border: none;
+    font-size: 1.5rem;
+    line-height: 1;
+    padding: 0 0.5rem;
+    cursor: pointer;
+    border-radius: 50%;
+    justify-self: center; /* Centers this item within its grid column */
+  }
+  .delete-journey-button:hover { background-color: #f1f1f1; color: #a01c2a; }
+  
+  /* Styling for the header row above the list */
+  .list-header {
+    font-weight: bold;
+    color: #6c757d;
+    border-bottom: 2px solid #dee2e6;
+    margin-bottom: 0.5rem;
+    background-color: transparent; /* Headers shouldn't have a background */
+    border: none;
+  }
+  
+  /* Specific style for the "Fare" text in the header */
+  .fare-header { text-align: center; }
+  
+  /* Styling for the total row at the bottom */
+  .total-fare-container {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+    border-top: 2px solid #e9ecef;
+    font-size: 1.1rem;
+    background-color: transparent; 
+    border: none;
+  }
+  
+  /* Specific styling for the total fare number to make it stand out */
+  .total-fare-container .total-value {
+    color: #000;
+    background-color: #e9ecef;
+    font-weight: bold;
+  }
